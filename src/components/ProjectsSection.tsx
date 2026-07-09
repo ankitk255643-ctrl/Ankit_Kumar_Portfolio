@@ -19,54 +19,54 @@ const PROJECTS: ProjectData[] = [
         category: 'Personal',
         name: 'Forge',
         liveUrl: 'https://forge-pink-seven.vercel.app/',
-        col1Image1: '/Forge.png',
-        col1Image2: '/Forge1.png',
-        col2Image: '/Forge2.png',
+        col1Image1: '/projects/forge 1.png',
+        col1Image2: '/projects/forge 2.png',
+        col2Image: '/projects/forge 3.png',
       },
   {
       number: '02',
       category: 'Personal',
       name: 'LawLab',
       liveUrl: 'https://lawlab-self.vercel.app',
-      col1Image1: '/lawlab.png',
-      col1Image2: '/lawlab1.png',
-      col2Image: '/lawlab2.png',
+      col1Image1: '/projects/lawlab 1.png',
+      col1Image2: '/projects/lawlab 2.png',
+      col2Image: '/projects/lawlab 3.png',
     },
   {
     number: '03',
     category: 'Personal · GenAI',
     name: 'ResumeIQ',
     liveUrl: 'https://resumeiq-harsh.vercel.app/',
-    col1Image1: '/resumeiq-hero.png',
-    col1Image2: '/resumeiq-feedback.png',
-    col2Image: '/resumeiq-score.png',
+    col1Image1: '/projects/resumeIQ.png',
+    col1Image2: '/projects/resumeIQ.png',
+    col2Image: '/projects/resumeIQ.png',
   },
   {
     number: '04',
     category: 'Personal · Design',
     name: 'Notch',
     liveUrl: 'https://notch-zeta.vercel.app/',
-    col1Image1: '/notch-hero.png',
-    col1Image2: '/notch-pricing.png',
-    col2Image: '/notch-mockup.png',
+    col1Image1: '/projects/notch 1.png',
+    col1Image2: '/projects/notch 2.png',
+    col2Image: '/projects/notch 3.png',
   },
   {
     number: '05',
     category: 'Personal · AI',
     name: 'OmniGen AI',
     liveUrl: 'https://omnigen-ai-ruby.vercel.app/',
-    col1Image1: '/omnigen.png',
-    col1Image2: '/omnigen.png',
-    col2Image: '/omnigen.png',
+    col1Image1: '/projects/omnigen 1.png',
+    col1Image2: '/projects/omnigen 2.png',
+    col2Image: '/projects/omnigen 3.png',
   },
   {
     number: '06',
     category: 'Personal · AI',
     name: 'Chitti Robo',
     liveUrl: 'https://chitti-robo.onrender.com/',
-    col1Image1: '/chitti1.png',
-    col1Image2: '/chitti2.png',
-    col2Image: '/chitti3.png',
+    col1Image1: '/projects/chitti robo 1.png',
+    col1Image2: '/projects/chitti robo 2.png',
+    col2Image: '/projects/chitti robo 1.png',
   },
 ];
 
@@ -146,6 +146,7 @@ const ProjectCard = ({ project, index, total, containerRef }: ProjectCardProps) 
                 className="h-full w-full object-cover"
                 loading="lazy"
                 draggable={false}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22%3E%3Crect fill=%22%23222%22 width=%22100%25%22 height=%22100%25%22/%3E%3C/svg%3E'; }}
               />
             </div>
             <div
@@ -158,6 +159,7 @@ const ProjectCard = ({ project, index, total, containerRef }: ProjectCardProps) 
                 className="h-full w-full object-cover"
                 loading="lazy"
                 draggable={false}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22%3E%3Crect fill=%22%23222%22 width=%22100%25%22 height=%22100%25%22/%3E%3C/svg%3E'; }}
               />
             </div>
           </div>
@@ -170,6 +172,7 @@ const ProjectCard = ({ project, index, total, containerRef }: ProjectCardProps) 
               className="h-full w-full object-cover"
               loading="lazy"
               draggable={false}
+              onError={(e) => { (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22%3E%3Crect fill=%22%23222%22 width=%22100%25%22 height=%22100%25%22/%3E%3C/svg%3E'; }}
             />
           </div>
         </div>
