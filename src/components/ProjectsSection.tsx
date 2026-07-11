@@ -63,7 +63,7 @@ const PROJECTS: ProjectData[] = [
     number: '06',
     category: 'Personal · AI',
     name: 'Chitti Robo',
-    liveUrl: 'https://chitti-robo.onrender.com/',
+    liveUrl: 'https://chitti-robo-1.onrender.com/',
     col1Image1: '/projects/chitti robo 1.png',
     col1Image2: '/projects/chitti robo 2.png',
     col2Image: '/projects/chitti robo 1.png',
